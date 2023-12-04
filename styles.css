@@ -1,0 +1,127 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .resume {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin: 5px 0;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    margin: 5px 0;
+  }
+  
+  .grade {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 15px;
+  }
+  
+  .skills ul li:before {
+    content: '• ';
+    color: #FF7F50; /* цвет маркера */
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.1em;
+  }
+
+
+  
+  a {
+    color: #007BFF; /* цвет ссылки */
+  }
+  
+  /* Общие стили */
+/* ... (остальная часть CSS кода без изменений) */
+
+/* Анимации */
+.resume {
+  opacity: 0;
+  animation: fade-in 1s ease forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  opacity: 0;
+  animation: fade-in-section 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fade-in-section {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skills ul li {
+  opacity: 0;
+  animation: fade-in-skills 1s ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fade-in-skills {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
